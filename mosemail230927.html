@@ -18,7 +18,7 @@ button:disabled{background:#999;cursor:not-allowed}
 .footer{margin-top:40px;text-align:center;font-size:13px;color:#666}
 </style>
 <meta property="og:title" content="发信 - 水二杂记｜MOSE" />
-<meta property="og:description" content="使用《水二杂记》业务域名发信，请勿外传网址。" />
+<meta property="og:description" content="《水二杂记》业务发信，请勿外传网址。" />
 <meta property="og:image" content="https://mose.cc.cd/favicon-96x96.png" />
 <meta property="og:url" content="https://mose.cc.cd/mosemail230927.html" />
 <meta property="og:type" content="website" />
@@ -28,8 +28,8 @@ button:disabled{background:#999;cursor:not-allowed}
 <div class="box">
     <h2>📧 用专属域名发信</h2>
     <select id="fromSelect">
-        <option value="noreply" selected>《水二杂记》官方 &lt;mose@mose.cc.cd&gt;</option>
-        <option value="pigli">沧海四象 &lt;pigli@mose.cc.cd&gt;</option>
+        <option value="noreply" selected>《水二杂记》官方 &lt;mose@resend.dev&gt;</option>
+        <option value="pigli">沧海四象 &lt;pigli@resend.dev&gt;</option>
     </select>
     <input id="to" type="email" placeholder="收件人邮箱（如 abcd@example.com）" required>
     <input id="subject" placeholder="邮件主题" required>
@@ -41,8 +41,8 @@ button:disabled{background:#999;cursor:not-allowed}
 <script>
 // 发件人身份映射
 const senders = {
-    noreply: { name: '《水二杂记》官方', email: 'mose@mose.cc.cd' },
-    pigli: { name: '沧海四象', email: 'pigli@mose.cc.cd' }
+    noreply: { name: '《水二杂记》官方', email: 'mose@resend.dev' },
+    pigli: { name: '沧海四象', email: 'pigli@resend.dev' }
 };
 
 async function sendEmail() {
