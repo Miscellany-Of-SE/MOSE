@@ -16,10 +16,10 @@ body{background:#f8f9fc;color:#333;line-height:1.7}
 .logo-fixed{position:fixed;top:16px;left:20px;z-index:999}
 .logo-fixed img{height:50px;border-radius:8px}
 
-/* 新增：个人作品集悬浮跳转按钮 核心样式 */
+/* 悬浮按钮改到导航栏下方，top值大于导航高度 */
 .dashboard-float-btn {
     position: fixed;
-    top: 16px;
+    top: 90px; /* 导航栏整体高度约80px，往下挪 */
     right: 20px;
     z-index: 999;
     background-color: #007bff;
@@ -35,11 +35,10 @@ body{background:#f8f9fc;color:#333;line-height:1.7}
 .dashboard-float-btn:hover {
     background-color: #0056b3;
     transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(0, 123, 255, 0.3);
 }
-/* 移动端适配 */
 @media(max-width:768px){
     .dashboard-float-btn {
+        top: 76px;
         padding: 8px 12px;
         font-size: 13px;
         right: 12px;
