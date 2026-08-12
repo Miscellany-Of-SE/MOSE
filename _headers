@@ -1,0 +1,19 @@
+# 动态留言页：禁止缓存，每次强制校验
+/messages.html
+  Cache-Control: no-cache, no-store, must-revalidate
+
+# 所有其他HTML归档页面：90天长缓存（3个月）
+/*.html
+  Cache-Control: public, max-age=23328000, s-maxage=23328000, stale-while-revalidate=86400
+
+# 静态资源全年强缓存（图片、图标、样式、脚本、配置文件）
+/*.png
+/*.jpg
+/*.jpeg
+/*.gif
+/*.svg
+/*.ico
+/*.css
+/*.js
+/*.webmanifest
+  Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
